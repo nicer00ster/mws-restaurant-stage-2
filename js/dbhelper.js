@@ -206,9 +206,9 @@ class DBHelper {
    // There's no photograph key in the 10th restaurant so I created a fallback. Lol.
   static imageUrlForRestaurant(restaurant) {
     if(restaurant.photograph) {
-      return (`/img/${restaurant.photograph}.jpg`);
+      return (`/img/${restaurant.photograph}.webp`);
     } else {
-      return ('/img/lol.jpg');
+      return ('/img/lol.webp');
     }
   }
 
