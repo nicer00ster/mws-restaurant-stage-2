@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Cache-Control" max-age="86400" content="public">
+  <meta name="description" content="Udacity Restaurant Project"/>
+  <meta name="theme-color" content="#db5945">
+  <link rel="manifest" href="/manifest.json">
+  <link rel='icon' sizes='192x192' href='/img/icons/icon-192x192.png'>
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Restaurant Reviews</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1><a href="/" rel="noopener">Restaurant Reviews</a></h1>
+    </nav>
+  </header>
+
+  <main id="maincontent">
+    <section id="map-container">
+      <div role="application" id="map"></div>
+    </section>
+    <section>
+      <div class="filter-options">
+        <h2>Filter Results</h2>
+        <label for="neighborhoods-select">Neighborhoods</label>
+        <select id="neighborhoods-select" label="Neighborhoods" name="neighborhoods" onchange="updateRestaurants()">
+          <option value="all" label="All Neighborhoods"></option>
+        </select>
+        <label for="cuisines-select">Cuisines</label>
+        <select id="cuisines-select" label="Neighborhoods" name="cuisines" onchange="updateRestaurants()">
+          <option value="all" label="All Cuisines"></option>
+        </select>
+      </div>
+      <ul role="list" id="restaurants-list"></ul>
+    </section>
+  </main>
+
+  <script type="application/javascript" src="js/idb.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDstQpj8blc9ep_ewGiU6-mYLIO9xpW0Ag&libraries=places&callback=initMap"></script>
+  <script type="text/javascript" src="js/initSw.js"></script>
+
+  <footer id="footer">
+    Copyright (c) 2017 <a href="/" rel="noopener"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+
+</body>
+
+</html>
