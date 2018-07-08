@@ -22,7 +22,8 @@ self.addEventListener('install', event => {
       '/img/7.webp',
       '/img/8.webp',
       '/img/9.webp',
-      '/img/10.webp'
+      '/img/10.webp',
+      '/maps/*';
      ]);
    })
  );
