@@ -1,90 +1,102 @@
 @charset "utf-8";
 /* CSS Document */
 
-body,td,th,p{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
-	line-height: 1.5;
+body,td,th,p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #333;
+    line-height: 1.5;
 }
+
 body {
-	background-color: #fdfdfd;
-	margin: 0 auto;
-	position:absolute;
+    background-color: #fdfdfd;
+    margin: 0 auto;
+    position: absolute;
 }
+
 html, body {
     width: 100%;
     overflow-x: hidden;
 }
+
 ul, li {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #333;
 }
+
 a {
-	color: orange;
-	text-decoration: none;
-	transition: all 0.25s;
+    color: orange;
+    text-decoration: none;
+    transition: all 0.25s;
 }
+
 a:hover, a:focus {
-	color: #3397db;
-	font-weight: bolder;
-	letter-spacing: 2px;
-	text-decoration: none;
+    color: #bbdef5;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
-a img{
-	border: none 0px #fff;
+
+a img {
+    border: none 0px #fff;
 }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 20px;
 }
+
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
 #maincontent {
-  background-color: #f3f3f3;
-  min-height: 100%;
-	width: 100%;
+    background-color: #f3f3f3;
+    min-height: 100%;
+    width: 100%;
 }
+
 #footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	width: 100%;
-  background-color: #444;
-  color: #fefefe;
-  font-size: 8pt;
-  letter-spacing: 1px;
-  padding: 25px 1rem;
-  text-align: center;
-  text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: #444;
+    color: #fefefe;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    padding: 25px 1rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 /* ====================== Navigation ====================== */
 nav {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-  width: 100%;
-  height: 80px;
-  background-color: #252831;
-  text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: #252831;
+    text-align: center;
+    border: 2px solid black;
+}
 
-	border: 2px solid black;
-}
 nav h1 {
-  margin: 0 auto;
+    margin: 0 auto;
 }
+
 nav h1 a {
-  color: #fff;
-  font-size: 14pt;
-  font-weight: 200;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+    color: #fff;
+    font-size: 14pt;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
+
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
@@ -119,286 +131,323 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 400px;
-  width: 100%;
-  background-color: #ccc;
+    height: 400px;
+    width: 100%;
+    background-color: #ccc;
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-	display: flex;
-	flex-wrap:wrap;
-  width: 100%;
-	justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 	/*flex-direction: row;*/
-  background-color: #3397DB;
-  align-items: center;
+    background-color: #a9d8f7;
+    align-items: center;
 }
+
 .filter-options h2 {
-  color: #333;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 4;
-  margin: 0 20px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 4;
+    margin: 0 20px;
 }
+
 .filter-options select {
-	flex: 1;
-  background-color: #fff;
-  border: 1px solid #fff;
-  font-family: Arial,sans-serif;
-  font-size: 11pt;
-  height: 35px;
-  letter-spacing: 0;
-  margin: 10px;
-  padding: 0 10px;
-  width: 200px;
-	max-width: 200px;
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #fff;
+    font-family: Arial,sans-serif;
+    font-size: 11pt;
+    height: 35px;
+    letter-spacing: 0;
+    margin: 10px;
+    padding: 0 10px;
+    width: 200px;
+    max-width: 200px;
 }
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 100%;
-  background-color: #f3f3f3;
-  list-style: outside none none;
-  margin: 0;
-  padding: 30px 0 60px;
-  text-align: center;
-	border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #f3f3f3;
+    list-style: outside none none;
+    margin: 0;
+    padding: 30px 0 60px;
+    text-align: center;
+    border: 1px solid black;
 }
+
 #restaurants-list li {
-	display: flex;
-	flex-direction: column;
-  background-color: #fff;
-  border: 2px solid #ccc;
-  font-family: Arial,sans-serif;
-  margin: 15px;
-  min-height: 380px;
-  padding: 0 30px 25px;
-  text-align: left;
-  width: 270px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 2px;
+    font-family: Arial,sans-serif;
+    margin: 15px;
+    min-height: 380px;
+    padding: 0 30px 25px;
+    text-align: left;
+    width: 270px;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
 }
+
 #restaurants-list .restaurant-img {
-  background-color: #ccc;
-  display: block;
-  margin: 0;
-  max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
+    background-color: #ccc;
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    min-height: 248px;
+    min-width: 100%;
 }
+
 #restaurants-list li h1 {
-  color: #f18200;
-  font-family: Arial,sans-serif;
-  font-size: 14pt;
-  font-weight: 200;
-  letter-spacing: 0;
-  line-height: 1.3;
-  margin: 20px 0 10px;
-  text-transform: uppercase;
+    color: #0e0e0c;
+    font-family: Arial,sans-serif;
+    font-size: 14pt;
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: 1.3;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
 }
+
 #restaurants-list p {
-  margin: 0;
-  font-size: 11pt;
+    margin: 0;
+    font-size: 11pt;
 }
+
 #restaurants-list li a {
-  background-color: orange;
-  border-bottom: 3px solid #eee;
-  color: #333;
-  display: inline-block;
-  font-size: 10pt;
-  margin: 15px 0 0;
-  padding: 8px 30px 10px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-	transition: all 0.25s;
+    background-color: #252522;
+    border-bottom: 3px solid #eee;
+    color: white;
+    display: inline-block;
+    font-size: 10pt;
+    margin: 15px 0 0;
+    padding: 8px 30px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.25s;
 }
+
 #restaurants-list li a:hover, #restaurants-list li a:focus {
-	background-color: skyblue;
-	color: #fefefe;
+    background-color: rgb(201, 226, 232);
+    color: #fefefe;
 }
 
 /* ====================== Restaurant Details ====================== */
 .inside {
-	width: 100%;
+    width: 100%;
 }
+
 .inside header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
 .inside #map-container {
-	flex: 1;
-  background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
+    flex: 1;
+    background: blue none repeat scroll 0 0;
+    height: 87%;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 50%;
 }
+
 .inside #map {
-  background-color: #ccc;
-  height: 100%;
-  width: 100%;
+    background-color: #ccc;
+    height: 100%;
+    width: 100%;
 }
+
 .inside #footer {
-  width: 100%;
+    width: 100%;
 }
+
 #restaurant-name {
-  color: #f18200;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20pt;
-  font-weight: 200;
-  letter-spacing: 0;
-  margin: 15px 0 30px;
-  text-transform: uppercase;
-  line-height: 1.1;
-	text-align: center;
+    color: #f18200;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+    font-weight: 200;
+    letter-spacing: 0;
+    margin: 15px 0 30px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: center;
 }
+
 #restaurant-img {
-	width: 90%;
-	border-top-left-radius: 1rem;
-	border-bottom-right-radius: 1rem;
-	box-shadow: 4px 4px 10px;
+    width: 90%;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 4px 4px 10px;
 }
+
 #restaurant-address {
-  font-size: 12pt;
-  margin: 10px 0px;
+    font-size: 12pt;
+    margin: 10px 0px;
 }
+
 #restaurant-cuisine {
-  background-color: #333;
-	font-family: 'Raleway', sans-serif;
-  color: #ddd;
-  font-size: 12pt;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin: 0 0 20px;
-  padding: 2px 0;
-  text-align: center;
-  text-transform: uppercase;
-	width: 90%;
-	border-top-left-radius: 6rem;
-	border-bottom-right-radius: 6rem;
+    background-color: #333;
+    font-family: 'Raleway', sans-serif;
+    color: #ddd;
+    font-size: 12pt;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0 0 20px;
+    padding: 2px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90%;
+    border-top-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
 }
+
 #restaurant-container, #reviews-container {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #fff;
-  padding: 2.5rem 1rem;
-  width: 50%;
-	min-width: 75px;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    padding: 2.5rem 1rem;
+    width: 50%;
+    min-width: 75px;
 }
+
 #restaurant-container {
-	margin-top: 6rem;
+    margin-top: 6rem;
 }
+
 #reviews-container {
-  padding: 30px 40px 80px;
-	width: 40%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    padding: 30px 40px 80px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 #reviews-container h2 {
-  color: #f58500;
-	text-transform: uppercase;
-  font-size: 32pt;
-  font-weight: 300;
-  letter-spacing: 2px;
-  padding-bottom: 1pt;
-	text-align: center;
+    color: #f58500;
+    text-transform: uppercase;
+    font-size: 32pt;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-bottom: 1pt;
+    text-align: center;
 }
+
 #reviews-list {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	/*width: 100%;*/
-	/*max-width: 300px;*/
-	/*min-width: 150px;*/
-  margin: 0;
-  padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
+
 #reviews-list li {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	border-top-left-radius: 1rem;
-	border-bottom-right-radius: 1rem;
-  background-color: #fff;
-  list-style-type: none;
-  margin: 0 0 30px;
-  overflow: hidden;
-  position: relative;
-	box-shadow: 4px 4px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0 0 30px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 4px 4px 10px;
 }
+
 #reviews-list li p {
-  margin: 0 0 10px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+    margin: 0 0 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
+
 #reviews-list li h1 {
-	align-self: center;
-	text-align: center;
-	box-shadow: 2px 2px 0px 12px #fff;
-	border-radius: 4px;
-	letter-spacing: 2.5px;
-	background-color: orange;
-	color: #333;
-	width: 50%;
+    align-self: center;
+    text-align: center;
+    box-shadow: 2px 2px 0px 12px #fff;
+    border-radius: 4px;
+    letter-spacing: 2.5px;
+    background-color: orange;
+    color: #333;
+    width: 50%;
 }
+
 #reviews-list li p:last-child {
-	margin: 1rem;
+    margin: 1rem;
 }
 
 #reviews-list div {
-	display: flex;
-	justify-content: space-between;
-	background-color: #777;
-	padding: 10px 10px 10px;
-	border-bottom: 2px solid #333;
+    display: flex;
+    justify-content: space-between;
+    background-color: #777;
+    padding: 10px 10px 10px;
+    border-bottom: 2px solid #333;
 }
+
 #reviews-list div span:first-child {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	color: white;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	margin-left: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 1rem;
 }
+
 #reviews-list div span:last-child {
-	font-size: 16px;
-	color: #fefefe;
-	margin-right: 1em;
+    font-size: 16px;
+    color: #fefefe;
+    margin-right: 1em;
 }
+
 #restaurant-hours td {
-  color: #666;
+    color: #666;
 }
 
 
 /* Breakpoints */
 @media all and (max-width: 850px) {
-	.inside #map-container {
-		width: 100%;
-		height: 400px;
-		position: relative;
-	}
-	#maincontent {
-		width: 100%;
-	}
-	#breadcrumb {
-		width: 100%;
-	}
-	#reviews-container {
-	  width: 100%;
-		padding: 0;
-	}
-	#restaurant-container {
-		width: 100%;
-	}
-	#reviews-list {
-		width: 75%;
+    .inside #map-container {
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+
+    #maincontent {
+        width: 100%;
+    }
+
+    #breadcrumb {
+        width: 100%;
+    }
+
+    #reviews-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    #restaurant-container {
+        width: 100%;
+    }
+
+    #reviews-list {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+	#maincontent #map-container #map {
+			display: none;
 	}
 }

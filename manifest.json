@@ -1,8 +1,11 @@
 {
   "short_name": "Restaurants",
   "name": "Restaurants Application",
-  "theme_color": "#3397DB",
-  "background_color":"#3397DB",
+  "default_locale": "en",
+  "author": "Alex Busch",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
   "icons": [
     {
       "src": "img/icons/icon-72x72.png",
@@ -25,6 +28,5 @@
       "sizes": "512x512"
     }
   ],
-  "display":"standalone",
   "start_url": "/"
 }
